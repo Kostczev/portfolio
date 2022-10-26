@@ -1,0 +1,54 @@
+.title {
+   font-size: 20px;
+   text-align: center;
+   padding: 10px;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   margin-bottom: 3vh;
+}
+
+.works {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 3vh;
+
+   .work {
+      height: 200px;
+      
+      &__title {
+         font-size: 15px;
+         text-align: center;
+         padding: 5px;
+      }
+
+      img {
+         padding: 0 5px;
+         object-fit: cover;
+         width: 100%;
+         height: 150px;
+         cursor: pointer;
+         
+         &.pointer-off {
+            cursor: auto;
+         }
+      }
+
+      &__links{
+         display: flex;
+         height: 25px;
+         justify-content: space-around;
+         align-items: center;
+      }
+
+      &__button {
+         transition: .3s;
+         text-align: center;
+         color: $palette_1-color_5;
+         width: 100px;
+         padding: 5px;
+         &:hover {
+            color: $palette_1-color_6;
+         }
+      }
+   }
+}

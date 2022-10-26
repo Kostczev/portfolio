@@ -1,0 +1,50 @@
+body {
+   background: linear-gradient(50deg, rgba(214,230,242,1) 0%, rgba(185,215,234,1) 20%, rgba(214,230,242,1) 40%, rgba(185,215,234,1) 60%, rgba(214,230,242,1) 80%, rgba(185,215,234,1) 100%);
+   color: $palette_1-color_5;
+}
+
+.content-container {
+   transition: .3s;
+   transition-property: max-width;
+
+   max-width: 1200px;
+   padding: 3vh 0;
+   margin: auto;
+   display: flex;
+
+   @media (max-width:1200px) {
+      max-width: 970px;
+   }
+   @media (max-width:992px) {
+      max-width: 750px;
+   }
+   @media (max-width:767px) {
+      max-width: none;
+      padding: 3vh 1vh;
+   }
+}
+
+.persona-info-area {
+   flex: 0 1 30%;
+   position: relative;
+}
+
+.works-area {
+   flex: 0 1 70%;
+   margin-left: 3vh;
+}
+
+.item {
+   background-color: $palette_1-color_1;
+   border-radius: 5px;
+   box-shadow: 0px 0px 2px 0px $palette_1-color_4;
+   overflow: hidden;
+}
+
+.button {
+   text-align: center;
+   color: $palette_1-color_5;
+   background-color: $palette_1-color_1;
+   border: 1px solid $palette_1-color_5;
+   border-radius: 5px;
+}

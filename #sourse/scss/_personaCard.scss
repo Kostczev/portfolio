@@ -1,0 +1,65 @@
+.persona-card {
+   position: sticky;
+   top: 3vh;
+   min-height: 600px;
+   height: 94vh;
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+   padding: 15px 10px;
+
+   &__photo {
+      height: 40%;
+      border-radius: 5px;
+      box-shadow: 0px 0px 2px 0px $palette_1-color_4;
+      margin-bottom: 10px;
+   }
+
+   &__fio {
+      font-size: 18px;
+      letter-spacing: 1px;
+      text-align: center;
+      line-height: 22px;
+      margin-bottom: 20px;
+   }
+
+   &__title {
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      line-height: 20px;
+   }
+
+   .block-items {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 5px -5px 10px -5px;
+   }
+   
+   //&__skills {
+   //}
+
+   //&__educations {
+   //}
+
+   //&__education {
+   //}
+
+   &__social {
+      margin: 10px;
+   }
+
+   .open-space {
+      flex: 1 1 auto;
+   }
+}
+
+.card-item {
+   padding: 5px;
+   border: 1px solid $palette_1-color_2;
+   border-radius: 5px;
+   letter-spacing: 1px;
+   margin: 5px 10px;
+}

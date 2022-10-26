@@ -1,240 +1,26 @@
 @import "_nullstyle";
 @import "_vars";
 
-body {
-   //background: linear-gradient(180deg, rgba(214,230,242,1) 0%, rgba(118,159,205,1) 50%, rgba(185,215,234,1) 100%);
-   background: linear-gradient(50deg, rgba(214,230,242,1) 0%, rgba(185,215,234,1) 20%, rgba(214,230,242,1) 40%, rgba(185,215,234,1) 60%, rgba(214,230,242,1) 80%, rgba(185,215,234,1) 100%);
-   color: $palette_1-color_5;
-}
-
-.content-container {
-   transition: .3s;
-   transition-property: max-width;
-
-   max-width: 1200px;
-   padding: 3vh 0;
-   margin: auto;
-   display: flex;
-
-   @media (max-width:1200px) {
-      max-width: 970px;
-   }
-   @media (max-width:992px) {
-      max-width: 750px;
-   }
-   @media (max-width:767px) {
-      max-width: none;
-      padding: 3vh 1vh;
-   }
-}
-
-.persona-info-area {
-   flex: 0 1 30%;
-   position: relative;
-
-   .persona-card {
-      position: sticky;
-      top: 3vh;
-      height: 94vh;
-      display: flex;
-      flex-direction: column;
-      //justify-content: space-around;
-      align-items:center;
-      padding: 10px;
-
-      &__photo {
-         height: 30%;
-         //margin: 10px;
-         border-radius: 5px;
-         box-shadow: 0px 0px 2px 0px $palette_1-color_4;
-         margin-bottom: 10px;
-      }
-   
-      &__fio {
-         font-size: 18px;
-         letter-spacing: 1px;
-         margin-bottom: 10px;
-         text-align: center;
-         line-height: 22px;
-      }
-   
-      &__title {
-         font-size: 16px;
-         text-transform: uppercase;
-         letter-spacing: 2px;
-         text-align: center;
-         line-height: 20px;
-      }
-   
-      .block-items {
-         display: flex;
-         flex-wrap: wrap;
-         margin: 0 -5px 10px -5px;
-      }
-      
-      &__skills {
-      }
-   
-      &__educations {
-      }
-   
-      &__education {
-      }
-   }
-
-   .card-item {
-      padding: 5px;
-      border: 1px solid $palette_1-color_2;
-      border-radius: 5px;
-      letter-spacing: 1px;
-      margin: 5px 10px;
-   }
-}
-
-
-
-.works-area {
-   flex: 0 1 70%;
-   margin-left: 3vh;
-
-   .title {
-      font-size: 20px;
-      text-align: center;
-      padding: 10px;
-      text-transform: uppercase;
-      letter-spacing: 5px;
-      margin-bottom: 3vh;
-   }
-
-   .works {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 3vh;
-
-      .work {
-         height: 200px;
-         
-         &__title {
-            font-size: 15px;
-            text-align: center;
-            padding: 5px;
-         }
-
-         img {
-            padding: 0 5px;
-            object-fit: cover;
-            width: 100%;
-            height: 150px;
-            cursor: pointer;
-            
-            &.pointer-off {
-               cursor: auto;
-            }
-         }
-
-         &__links{
-            display: flex;
-            height: 25px;
-            justify-content: space-around;
-            align-items: center;
-         }
-
-         &__button {
-            transition: .3s;
-            text-align: center;
-            color: $palette_1-color_5;
-            width: 100px;
-            padding: 5px;
-            &:hover {
-               color: $palette_1-color_6;
-            }
-         }
-      }
-   }
-}
+@import "_pageBase";
+@import "_personaCard";
+@import "_mainContent";
+@import "_panelShowImage";
+@import "_keyframes";
+@import "_social";
 
 
 
 
 
-.item {
-   background-color: $palette_1-color_1;
-   border-radius: 5px;
-   box-shadow: 0px 0px 2px 0px $palette_1-color_4;
-   overflow: hidden;
-}
-.button {
-   text-align: center;
-   color: $palette_1-color_5;
-   //padding: 10px;
-   background-color: $palette_1-color_1;
-   border: 1px solid $palette_1-color_5;
-   border-radius: 5px;
-}
 
-.show-image {
-   //transition: .5s;
-   //transition-property: top, bottom;
 
-   position: fixed;
-   top: 100vh;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   overflow: hidden;
 
-   cursor: pointer;
-   
 
-   .show-image__content {
-      display: flex;
-      align-items: center;
-      background-color: #000;
-      
-      width: 100%;
-      height: 100vh;
-      position: absolute;
 
-      img {
-         object-fit:contain;
-         width: 100%;
-         height: 100%;
-      }
-   }
 
-   &.active {
-      animation: open-panel-image .5s;
-      top: 0;
-      .show-image__content {
-         bottom: 0;
-      }
-   }
 
-   &.no-active {
-      animation: close-panel-image .5s;
-      top: 100vh;
-   }
-}
 
-@keyframes open-panel-image {
-   0% {
-      top: 100vh;
-   }
-   100% {
-      top: 0;
-   }
-}
-@keyframes close-panel-image {
-   0% {
-      top: 0;
-   }
-   99% {
-      top: 0;
-      bottom: 100vh;
-      opacity: 1;
-   }
-   100% {
-      opacity: 0;
-      top: 100vh;
-   }
-}
+
+
+
+

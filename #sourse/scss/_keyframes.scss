@@ -1,0 +1,20 @@
+//_panelShowImage
+@keyframes open-panel-image {
+   0% {
+      top: 100%;
+      //top: 100vh;
+   }
+   100% {
+      top: 0;
+   }
+}
+@keyframes close-panel-image {
+   0% {
+      top: 0;
+   }
+   100% {
+      top: 0;
+      bottom: 100%;
+      //bottom: 100vh;
+   }
+}
