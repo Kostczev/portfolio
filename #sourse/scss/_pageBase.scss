@@ -3,36 +3,72 @@ body {
    color: $palette_1-color_5;
 }
 
+.persona-info-area {
+   margin-bottom: 3vh;   
+}
+
 .content-container {
    transition: .3s;
    transition-property: max-width;
 
-   max-width: 1200px;
-   padding: 3vh 0;
+   max-width: none;
+   //max-width: 1200px;
+   padding: 3vh 1vh;
    margin: auto;
-   display: flex;
+   
+   //display: flex;
+   //@media (max-width:1200px) {
+   //   max-width: 970px;
+   //}
+   //@media (max-width:992px) {
+   //   max-width: 750px;
+   //   display: block;
+   //}
+   //@media (max-width:767px) {
+   //   max-width: none;
+   //   padding: 3vh 1vh;
+   //}
 
-   @media (max-width:1200px) {
-      max-width: 970px;
+   @media (min-width: 751px) {
+      max-width: 750px;
+      //padding: 3vh 0;
    }
-   @media (max-width:992px) {
+   @media (min-width: 751px) {
       max-width: 750px;
    }
-   @media (max-width:767px) {
-      max-width: none;
-      padding: 3vh 1vh;
+   //@media (min-width: 993px) {
+      
+   //}
+   @media (min-width: 993px) and (min-height: 630px) {
+      max-width: 992px;
+      display: flex;
+      
+      .persona-info-area {
+         margin: 0;
+         flex: 0 1 30%;
+         position: relative;
+      }
+      
+      .works-area {
+         flex: 0 1 70%;
+         margin-left: 3vh;
+      }
+   }
+   @media (min-width: 1201px) {
+      max-width: 1200px;
    }
 }
 
-.persona-info-area {
-   flex: 0 1 30%;
-   position: relative;
-}
 
-.works-area {
-   flex: 0 1 70%;
-   margin-left: 3vh;
-}
+//.persona-info-area {
+//   flex: 0 1 30%;
+//   position: relative;
+//}
+
+//.works-area {
+//   flex: 0 1 70%;
+//   margin-left: 3vh;
+//}
 
 .item {
    background-color: $palette_1-color_1;
