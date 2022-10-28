@@ -63,38 +63,37 @@
 
 
 .show-education {
-   //padding: 3vh;
    display: flex;
    flex-direction: column;
-   //position: relative;
 
    &__qualifications {
       font-size: 18px;
       letter-spacing: 2px;
       line-height: 20px;
       margin-bottom: 1vh;
+      text-align: center;
    }
-
+   
    &__place-of-learning {
       font-size: 18px;
       letter-spacing: 2px;
       line-height: 20px;
       margin-bottom: 2vh;
+      text-align: center;
    }
-
+   
    &__specialty {
       font-size: 16px;
       letter-spacing: 1px;
       line-height: 18px;
+      text-align: center;
    }
 
    &__scores {
       display: flex;
-      height: 40vh;
       margin: 0 -3vw;
-
+      
       img {
-         object-fit: cover;
          width: 30vw;
          padding: 3vw;
          cursor: pointer;
@@ -106,7 +105,6 @@
 }
 
 .show-more-image {
-   //cursor: pointer;
    img {
       padding: 3vh;
       object-fit:contain;
