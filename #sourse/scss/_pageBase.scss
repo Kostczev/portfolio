@@ -1,6 +1,10 @@
 body {
    background: linear-gradient(50deg, rgba(214,230,242,1) 0%, rgba(185,215,234,1) 20%, rgba(214,230,242,1) 40%, rgba(185,215,234,1) 60%, rgba(214,230,242,1) 80%, rgba(185,215,234,1) 100%);
    color: $palette_1-color_5;
+
+   &.lock {
+      overflow: hidden;
+   }
 }
 
 .persona-info-area {

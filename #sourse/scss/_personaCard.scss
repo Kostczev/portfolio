@@ -37,15 +37,10 @@
       flex-wrap: wrap;
       margin: 5px -5px 10px -5px;
    }
-   
-   //&__skills {
-   //}
 
-   //&__educations {
-   //}
-
-   //&__education {
-   //}
+   &__education {
+      cursor: pointer;
+   }
 
    &__social {
       margin: 10px;
