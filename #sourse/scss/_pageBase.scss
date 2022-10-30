@@ -7,6 +7,16 @@ body {
    }
 }
 
+.link {
+   transition: .3s;
+   color: $palette_1-color_5;
+   padding: 5px;
+   text-decoration: underline;
+   &:hover {
+      color: $palette_1-color_6;
+   }
+}
+
 .persona-info-area {
    margin-bottom: 3vh;   
 }

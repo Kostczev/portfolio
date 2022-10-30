@@ -88,6 +88,16 @@ body.lock {
   overflow: hidden;
 }
 
+.link {
+  transition: 0.3s;
+  color: #2A363B;
+  padding: 5px;
+  text-decoration: underline;
+}
+.link:hover {
+  color: #4ECCA3;
+}
+
 .persona-info-area {
   margin-bottom: 3vh;
 }
@@ -246,15 +256,9 @@ body.lock {
   justify-content: space-around;
   align-items: center;
 }
-.works .work__button {
-  transition: 0.3s;
+.works .work__link {
   text-align: center;
-  color: #2A363B;
   width: 100px;
-  padding: 5px;
-}
-.works .work__button:hover {
-  color: #4ECCA3;
 }
 
 .show-more {

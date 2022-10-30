@@ -45,15 +45,9 @@
          align-items: center;
       }
 
-      &__button {
-         transition: .3s;
+      &__link {
          text-align: center;
-         color: $palette_1-color_5;
          width: 100px;
-         padding: 5px;
-         &:hover {
-            color: $palette_1-color_6;
-         }
       }
    }
 }
