@@ -34,7 +34,7 @@ input,button,textarea{
 
 /*еще куча фич, таких как отклчение крестиков и отступов в разных браузерах*/
 input::-ms-clear{display: none;}
-button{cursor: pointer;}
+button { background: transparent; cursor: pointer; }
 button::-moz-focus-inner{padding: 0;border: 0;}
 a,a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}

@@ -49,6 +49,7 @@ input::-ms-clear {
 }
 
 button {
+  background: transparent;
   cursor: pointer;
 }
 
@@ -108,7 +109,7 @@ body.lock {
     max-width: 750px;
   }
 }
-@media (min-width: 993px) and (min-height: 630px) {
+@media (min-width: 993px) {
   .content-container {
     max-width: 992px;
     display: flex;
@@ -183,6 +184,11 @@ body.lock {
 }
 .persona-card__education {
   cursor: pointer;
+  transition: 0.3s;
+  transition-property: color;
+}
+.persona-card__education:hover {
+  color: #4ECCA3;
 }
 .persona-card__social {
   margin: 10px;
@@ -221,16 +227,18 @@ body.lock {
   text-align: center;
   padding: 5px;
 }
-.works .work img {
+.works .work__image {
   padding: 0 5px;
+  cursor: pointer;
+}
+.works .work__image.pointer-off {
+  cursor: auto;
+}
+.works .work__image img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 150px;
-  cursor: pointer;
-}
-.works .work img.pointer-off {
-  cursor: auto;
 }
 .works .work__links {
   display: flex;

@@ -35,7 +35,7 @@ function clickEducationImage() {
 
 
 function openPanelWorkImage(index) {
-   panelShowImage.querySelector('img').src = workImages[index].src;
+   panelShowImage.querySelector('img').src = workImages[index].querySelector('img').src;
    openShowPanel(panelShowImage);
 }
 
@@ -89,7 +89,7 @@ function swapCursorPointer(array) {
 function clickCloseShowPanels() {
    buttonClose.forEach((button, index) => {
       button.addEventListener('click', e => {
-         history.pushState({stateObj: null}, '');
+         history.pushState({stateObj: { name: 'main' }}, '');
          closeShowPanelByIndex(index);
       })
    })
@@ -110,23 +110,21 @@ function closeShowPanel(panel) {
 
 window.addEventListener('popstate', e=> {
    let state = e.state.stateObj;
-   if( state!= null ) {
-      switch (state.name) {
-         case 'workImage':
-            console.log('workImage');
-            openPanelWorkImage(state.index);
-            break;
-         case 'educations':
-            openPanelEducation(state.selector);
-            break;
-      
-         default:
-            break;
-      }
-   } else {
-      closeShowPanel(document.querySelector('.active-panel'));
-   }
+   switch (state.name) {
+      case 'workImage':
+         console.log('workImage');
+         openPanelWorkImage(state.index);
+         break;
+      case 'educations':
+         openPanelEducation(state.selector);
+         break;
+      case 'main':
+         closeShowPanel(document.querySelector('.active-panel'));
+         break;
    
+      default:
+         break;
+   }
 })
 
 
@@ -136,4 +134,4 @@ clickCloseShowPanels();
 openPanelEducations();  
 openingLockPanelShowImage();
 
-history.replaceState({stateObj: null}, '');
+history.replaceState({stateObj: { name: 'main' }}, '');

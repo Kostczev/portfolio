@@ -43,7 +43,10 @@ body {
    //@media (min-width: 993px) {
       
    //}
-   @media (min-width: 993px) and (min-height: 630px) {
+
+   //and (min-height: 630px)
+
+   @media (min-width: 993px)  {
       max-width: 992px;
       display: flex;
       

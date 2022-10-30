@@ -21,15 +21,20 @@
          padding: 5px;
       }
 
-      img {
+      //img {
+      &__image {
          padding: 0 5px;
-         object-fit: cover;
-         width: 100%;
-         height: 150px;
-         cursor: pointer;
          
+         cursor: pointer;
+
          &.pointer-off {
             cursor: auto;
+         }
+
+         & img {
+            object-fit: cover;
+            width: 100%;
+            height: 150px;
          }
       }
 
