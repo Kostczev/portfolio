@@ -27,35 +27,15 @@ body {
    transition-property: max-width;
 
    max-width: none;
-   //max-width: 1200px;
    padding: 3vh 1vh;
    margin: auto;
-   
-   //display: flex;
-   //@media (max-width:1200px) {
-   //   max-width: 970px;
-   //}
-   //@media (max-width:992px) {
-   //   max-width: 750px;
-   //   display: block;
-   //}
-   //@media (max-width:767px) {
-   //   max-width: none;
-   //   padding: 3vh 1vh;
-   //}
 
    @media (min-width: 751px) {
       max-width: 750px;
-      //padding: 3vh 0;
    }
    @media (min-width: 751px) {
       max-width: 750px;
    }
-   //@media (min-width: 993px) {
-      
-   //}
-
-   //and (min-height: 630px)
 
    @media (min-width: 993px)  {
       max-width: 992px;
@@ -76,17 +56,6 @@ body {
       max-width: 1200px;
    }
 }
-
-
-//.persona-info-area {
-//   flex: 0 1 30%;
-//   position: relative;
-//}
-
-//.works-area {
-//   flex: 0 1 70%;
-//   margin-left: 3vh;
-//}
 
 .item {
    background-color: $palette_1-color_1;
